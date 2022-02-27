@@ -24,8 +24,8 @@ function App() {
           <Route path='/quote' element={<Quote />} />
           <Route path='/services/works' element={<SingleWork />} />
         </Routes>
-      </BrowserRouter>
       <Footer />
+      </BrowserRouter>
     </div>
   );
 }

@@ -1,8 +1,28 @@
+import { useNavigate } from "react-router-dom";
 import strings from "../../localization";
 import './footer.scss'
 
 const Footer = () => {
-    return <footer id='main-footer'>
+
+  const navigate = useNavigate();
+
+  const handleNavigateHomee = () => {
+    navigate('/');
+  }
+  const handleNavigateServices = () => {
+    navigate('/services');
+  }
+  const handleNavigateProjects = () => {
+    navigate('/projects');
+  }
+  const handleNavigateContact = () => {
+    navigate('/contact');
+  }
+  const handleNavigateAboutUs = () => {
+    navigate('/about-us')
+  }
+  
+  return <footer id='main-footer'>
     <div className='footer-contained'>
       <div className='footer-wraper'>
         <div className='footer-item'>
@@ -32,19 +52,19 @@ const Footer = () => {
           <h3>{strings.footer.menu}</h3>
           <div className='footer-content'>
             <p>
-              <a href='/'>
+              <a onClick={() => handleNavigateHomee()}>
                 {strings.navigation.home}
               </a>
-              <a href='/services'>
+              <a onClick={() => handleNavigateServices()}>
                 {strings.navigation.services}
               </a>
-              <a href='/projects'> 
+              <a onClick={() => handleNavigateProjects()}> 
                 {strings.navigation.project}
               </a>
-              <a href='/about-us'>
+              <a onClick={() => handleNavigateAboutUs()}>
                 {strings.navigation.referecnes}
               </a>
-              <a href='/contact'>
+              <a onClick={() => handleNavigateContact()}>
                 {strings.navigation.contact}
               </a>
             </p>
@@ -52,7 +72,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
-</footer>
+  </footer>
 }
 
 export default Footer;
