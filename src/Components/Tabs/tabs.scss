@@ -1,0 +1,52 @@
+#tabs {
+    margin-top: 50px;
+
+    .tabs-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1{
+            font-size: 40px;
+            font-family: 'Bebas Neue', cursive;
+            color: rgb(187, 187, 187);
+        }
+    }
+    .MuiTabs-root {
+        margin-top: 40px;
+    }
+
+    .MuiTabs-flexContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .MuiButtonBase-root {
+        font-weight: bold;
+        font-size: 22px;
+        color: rgb(187, 187, 187);
+        text-transform: none;
+    }
+    .MuiTabs-indicator {
+        bottom: 0;
+        background: rgb(187, 187, 187) !important;
+    }
+
+    .MuiAvatar-root{
+        width: 150px;
+        height: 150px;
+    }
+
+    .MuiAvatar-root:hover {
+        background-color: rgb(187, 187, 187);
+    }
+}
+
+.tab-1-div {
+    padding: 20px 0px 20px 0px;
+
+    .tab-1-header {
+        line-height: 30px;
+        font-weight: normal;
+    }
+}

@@ -9,6 +9,19 @@ let strings = new LocalizedStrings({
             referecnes: 'About us',
             contact: 'Contact'
         },
+        constants: {
+            services: {
+                renovation: 'Renovation',
+                plaster: 'Plaster work',
+                customKitchen: 'Cutsom kitchen molds',
+                interiorExterior: 'Interior and exterior decoration',
+                modernWalls: 'Modern drywalls and ceilings',
+                floorLaminate: 'Floor, laminate and carpets',
+                painting: 'Painting work',
+                customVeranda: 'Cutom veranda',
+                inovativeAdvices: 'Inovative advices'
+            }
+        },
         pages:{
             home: {
                 titles:{
@@ -20,6 +33,15 @@ let strings = new LocalizedStrings({
                     h4: '✔ Conceptual solutions for whole construction industry',
                     h5: '✔ Consultation with our experts - architects and workers',
                     h6: '✔ Lower price and higher quality'
+                },
+                tabs: {
+                    pageTitle: 'Our work process',
+                    title1: 'Make a contact',
+                    title2: 'Making a project',
+                    title3: 'Realising of project',
+                    description1: 'Send email to gipsplaatrenovatie@gmail.com or call our number to schedule free estimate and discuss about your ideas. We can also come to your home if you want to speak in personal with us.',
+                    description2: 'We will design your project and calculate costs. A professional approach will avoid many common mistakes, reduce the cost of materials and choose the best way to implement your ideas.',
+                    description3: 'Upon your approval of the estimate, We will schedule your project to start on the previosly agreed date. Your dream is becoming a reality.'
                 },
                 cards:{
                     renovation: 'Renovation',
@@ -44,7 +66,7 @@ let strings = new LocalizedStrings({
                 contactForm: 'Contact form',
 
                 contactCard:{
-                    phone: 'Phone: +381638234157',
+                    phone: 'Phone: +31638234157',
                     email: 'gipsplaatrenovatie@gmail.com',
                     address: 'Nijmegen, North Brabant',
                     requestQuote: 'Request quote?',
@@ -220,11 +242,11 @@ let strings = new LocalizedStrings({
             aboutUs:{
                 pageTitle: 'About us',
                 pageTitle2: 'De familie',
-                pageTitle3: 'Test2',
+                pageTitle3: 'Our Mission',
                 pageTitle4: 'Test3',
                 pageTitle5: 'Test4',
-                description: `Our company is the world leader in online news and information and seeks to inform, engage and empower the world. Staffed 24 hours, seven days a week by a dedicated team in CNN bureaus around the world, CNN's digital platforms deliver news from almost 4,000 journalists in every corner of the globe.Our company is the world leader in online news and information and seeks to inform, engage and empower the world. Staffed 24 hours, seven days a week by a dedicated team in CNN bureaus around the world, CNN's digital platforms deliver news from almost 4,000 journalists in every corner of the globe.`,
-                description2: `Our company is the world leader in online news and information and seeks to inform, engage and empower the world. Staffed 24 hours, seven days a week by a dedicated team in CNN bureaus around the world, CNN's digital platforms deliver news from almost 4,000 journalists in every corner of the globe.Our company is the world leader in online news and information and seeks to inform, engage and empower the world. Staffed 24 hours, seven days a week by a dedicated team in CNN bureaus around the world, CNN's digital platforms deliver news from almost 4,000 journalists in every corner of the globe.`,
+                description: `We are family owned and operated company with a touch of full services of home constructions or the repair and renovation services. The company was established in “2011” with a passion to serve local people with high quality construction services which we perform for personal or commercial properties. Father and 2 brothers are making the good atmosphere and keeping everything in good shape for the satisfaction of our clients..`,
+                description2: `We are providing the best construction or renovation services in whole Europe, and its suburban areas as well. Here we are serving the construction industry with high profile of building construction, usage of best material, keeping the safety of our clients at highest priority. We are a “Brand” and want to be the first choice of each client who want to renovate their house or make a piece of art in your building, office or commercial center. We are witnesses how much false ''experts'' and scamers came to Europe, we worked on Balkan and recently expanded out job in Netherland and Germany mostly. So if you have renovation and restoration works then we are the best ones, to be the choice of everybody. If our past works dont prove the quality, then what does?`,
                 description3: `Our company is the world leader in online news and information and seeks to inform, engage and empower the world. Staffed 24 hours, seven days a week by a dedicated team in CNN bureaus around the world, CNN's digital platforms deliver news from almost 4,000 journalists in every corner of the globe.Our company is the world leader in online news and information and seeks to inform, engage and empower the world. Staffed 24 hours, seven days a week by a dedicated team in CNN bureaus around the world, CNN's digital platforms deliver news from almost 4,000 journalists in every corner of the globe.`,
                 description4: `Our products and platforms take you to the farthest corners of the world, and they bring the world to you, delivering content and services that enrich your lives, your families and your communities.`,
 
@@ -244,10 +266,10 @@ let strings = new LocalizedStrings({
     
     nl: {
         navigation:{
-            home: 'Home',
-            services: 'Services',
-            project: 'Projects',
-            referecnes: 'About us',
+            home: 'Thuis',
+            services: 'Diensten',
+            project: 'Projecten',
+            referecnes: 'Over ons',
             contact: 'Contact'
         },
         pages:{
@@ -285,7 +307,7 @@ let strings = new LocalizedStrings({
                 contactForm: 'Contact form',
 
                 contactCard:{
-                    phone: 'Phone: +381638234157',
+                    phone: 'Phone: +31638234157',
                     email: 'gipsplaatrenovatie@gmail.com',
                     address: 'Nijmegen, North Brabant',
                     requestQuote: 'Request quote?',

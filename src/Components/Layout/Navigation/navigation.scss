@@ -1,17 +1,31 @@
 #header{
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
     margin: 0 auto;
     width: 100%;
-    padding-left: 15px;
     padding-right: 15px;
-    max-width: 1300px;
+    max-width: 1600px;
 
     .header-items{
         align-items: center;
         justify-content: space-between;
         flex-direction: row;
-        display: flex;;
+        display: flex;
+
+        .css-j9qi3c-MuiStack-root{
+            align-items: center;
+
+            .breadcrumbs {
+                margin-left: 8px;
+                .mailto {
+                    color: black;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
+        }
 
         .brand{
             font-size: 30px;
@@ -45,6 +59,33 @@
                     margin: 0;
                     overflow-wrap: break-word;
 
+                    .drop-down {
+                        position: relative;
+                        display: inline-block;
+                        .drop-down-content {
+                            display: none;
+                            position: absolute;
+                            background-color: #f1f1f1;
+                            min-width: 150px;
+                            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                            z-index: 100;
+                        }
+
+                        .drop-down-content a {
+                            color: black;
+                            padding: 12px 16px;
+                            text-decoration: none;
+                            display: block;
+                            cursor: pointer;
+                        }
+
+                        .drop-down-content a:hover {background-color: red;}
+                    }
+                    .drop-down:hover .drop-down-content {display: block;}
+
+
+                    
+
                     li{
                         margin: 0 10px;
                         display: list-item;
@@ -55,17 +96,25 @@
 
                         a{
                             font-size: 25px;
-                            color: #fff;
+                            color: #000;
                             text-decoration: none;
                             transition: all .2s ease;
                             cursor: pointer;
-                            // &.active{
-                            //     color: #ff1a1a;
-                            // }
+
+                            &:before {
+                                content: "";
+                                width: 1px;
+                                background-color: green;
+                                position: absolute;
+                                right: 0;
+                                opacity: .2;
+                                top: 0;
+                            }
                         }
                         a:hover{
                             color: #ff1a1a;
                         }
+                        
                         @media screen and (max-width: 420px) {
                             a {
                               font-size: 16px;

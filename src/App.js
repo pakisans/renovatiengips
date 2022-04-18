@@ -8,8 +8,21 @@ import Navigation2 from "./Components/Layout/Navigation/Navigation2";
 import Quote from "./Pages/Quote/Quote";
 import SingleWork from "./Pages/Services/SingleWork";
 import Footer from "./Components/Layout/Footer";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import strings from "./localization";
+import { changeLanguage } from "./Components/Slices/LanguageSlice";
+import { getLanguageFromLocalStorage } from "./Components/Base/LocalStorage";
 
 function App() {
+  const language = useSelector((state) => state.language.language);
+  const dispatch = useDispatch();
+
+
+  useEffect(() => {
+    strings.setLanguage(getLanguageFromLocalStorage())
+
+  },[language])
 
   return (
     <div className="App">

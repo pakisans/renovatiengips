@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import View from "../../Components/Constans/ViewType";
+import TabsControl from "../../Components/Tabs/Tabs";
 import strings from "../../localization";
 import './home.scss'
 
@@ -10,12 +11,10 @@ const Container = styled.section`
     height: auto;
     display: flex;
     justify-content: center;
-
     color: white;
     z-index: 11;
 `
 const Home = () => {
-
     const navigate = useNavigate();
 
     const requestQuote = () =>{
@@ -65,6 +64,9 @@ const Home = () => {
                         <a onClick={requestQuote} className="button">{strings.pages.home.titles.requestQuote}</a>
                     </div>
                 </div>
+                <div className="home-tabs">
+                    <TabsControl />
+                </div>
                 <div className="cards">
                     <div className="wraper">
                         <div className="singlecard">
@@ -73,7 +75,6 @@ const Home = () => {
                             </div>
                             <div className="itemContent">
                                 <h3>{strings.pages.home.cards.renovation}</h3>
-                                <p>{strings.pages.home.cards.description.description1}</p>
                             </div>
                         </div>
                         <div className="singlecard">
@@ -82,7 +83,6 @@ const Home = () => {
                             </div>
                             <div className="itemContent">
                                 <h3>{strings.pages.home.cards.plasterWorks}</h3>
-                                <p>{strings.pages.home.cards.description.description1}</p>
                             </div>
                         </div>
                         <div className="singlecard">
@@ -91,7 +91,6 @@ const Home = () => {
                             </div>
                             <div className="itemContent">
                                 <h3>{strings.pages.home.cards.customKitchenMolds}</h3>
-                                <p>{strings.pages.home.cards.description.description1}</p>
                             </div>
                         </div>
                         <div className="singlecard">
@@ -100,7 +99,6 @@ const Home = () => {
                             </div>
                             <div className="itemContent">
                                 <h3>{strings.pages.home.cards.ineteriorExterior}</h3>
-                                <p>{strings.pages.home.cards.description.description1}</p>
                             </div>
                         </div>
                         <div className="singlecard">
@@ -109,7 +107,6 @@ const Home = () => {
                             </div>
                             <div className="itemContent">
                                 <h3>{strings.pages.home.cards.professionalGips}</h3>
-                                <p>{strings.pages.home.cards.description.description1}</p>
                             </div>
                         </div>
                         <div className="singlecard">
@@ -118,7 +115,6 @@ const Home = () => {
                             </div>
                             <div className="itemContent">
                                 <h3>{strings.pages.home.cards.floorsLaminateCarpet}</h3>
-                                <p>{strings.pages.home.cards.description.description1}</p>
                             </div>
                         </div>
                         <div className="singlecard">
@@ -127,7 +123,6 @@ const Home = () => {
                             </div>
                             <div className="itemContent">
                                 <h3>{strings.pages.home.cards.paiting}</h3>
-                                <p>{strings.pages.home.cards.description.description1}</p>
                             </div>
                         </div>
                         <div className="singlecard">
@@ -136,7 +131,6 @@ const Home = () => {
                             </div>
                             <div className="itemContent">
                                 <h3>{strings.pages.home.cards.customVeranda}</h3>
-                                <p>{strings.pages.home.cards.description.description1}</p>
                             </div>
                         </div>
                         <div className="singlecard">
@@ -145,7 +139,6 @@ const Home = () => {
                             </div>
                             <div className="itemContent">
                                 <h3>{strings.pages.home.cards.advicesInnovation}</h3>
-                                <p>{strings.pages.home.cards.description.description1}</p>
                             </div>
                         </div>
                     </div>

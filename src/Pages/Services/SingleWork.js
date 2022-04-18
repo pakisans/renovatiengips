@@ -8,12 +8,11 @@ const SingleWork = () => {
     const location = useLocation();
     const [pageState, setPageState] = useState();
 
-
     useEffect(() => {
         if(location.state){
             setPageState(location.state)
         }
-    },[])
+    },[location.state])
 
     const renovation = () => {
         return <>

@@ -1,30 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import {I18nextProvider} from "react-i18next";
-import i18next from "i18next";
-import strings from './localization';
-
-i18next.init({
-    interpolation: { escapeValue: false },  // React already does escaping
-    lng: 'en',
-    resources: {
-      en: {
-        common: strings.setLanguage('en')
-      },
-
-      nl: {
-        common: strings.setLanguage('nl')
-      }
-    }
-});
-
+import {Provider} from "react-redux";
+import store from './store'
 
 ReactDOM.render(
   <React.StrictMode>
-    <I18nextProvider i18n={i18next}>
+    <Provider store={store}>
             <App/>
-        </I18nextProvider>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

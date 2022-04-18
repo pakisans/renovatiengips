@@ -46,10 +46,10 @@ const Projects = () => {
                 </div>
             }
             {
-                isTabletOrMobile && <div style={{marginLeft:'10px'}}>
+                isTabletOrMobile && <div style={{marginLeft:'0px'}}>
                     <SimpleImageSlider
-                        width={200}
-                        height={200}
+                        width={300}
+                        height={250}
                         images={images}
                         showBullets={true}
                         showNavs={true}
