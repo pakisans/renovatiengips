@@ -61,9 +61,11 @@ const Navigation2 = () => {
                 <Stack className="stack-with-crumbs" spacing={-1} direction='row'>
                     <Button onClick={() => window.location.href = "https://facebook.com"}><Avatar sx={{ width: 40, height: 40 }} src='images/facebook-logo-2019.svg' /></Button>
                     <Button onClick={() => window.location.href = "https://instagram.com"}><Avatar sx={{ width: 40, height: 40 }} src='images/instagram.svg' /></Button>
-                    <Breadcrumbs className="breadcrumbs" separator=''>
+                    <Breadcrumbs className="breadcrumbs" separator='|'>
                         <Avatar className="avatar-image" sx={{ width: 40, height: 40, backgroundColor:'#d5dee6'  }} src='images/email.svg' />
                         <a className='mailto' href='mailto:gipsplaatrenovatie@gmail.com'>gipsplaatrenovatie@gmail.com</a>
+                    </Breadcrumbs>
+                    <Breadcrumbs className="breadcrumbs" separator='|'>
                         <Avatar className="avatar-image" sx={{ width: 40, height: 40, backgroundColor:'#d5dee6' }} src='images/telephone.svg' />
                         <label>+31638234157</label>
                     </Breadcrumbs>
