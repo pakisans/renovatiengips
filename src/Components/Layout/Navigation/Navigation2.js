@@ -58,7 +58,7 @@ const Navigation2 = () => {
     return (
         <header id="header">
             <div className="header-items">
-                <Stack spacing={-1} direction='row'>
+                <Stack className="stack-with-crumbs" spacing={-1} direction='row'>
                     <Button onClick={() => window.location.href = "https://facebook.com"}><Avatar sx={{ width: 40, height: 40 }} src='images/facebook-logo-2019.svg' /></Button>
                     <Button onClick={() => window.location.href = "https://instagram.com"}><Avatar sx={{ width: 40, height: 40 }} src='images/instagram.svg' /></Button>
                     <Breadcrumbs className="breadcrumbs" separator=''>
