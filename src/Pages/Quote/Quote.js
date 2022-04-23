@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import strings from '../../localization';
 import './quote.scss'
 import emailjs from "emailjs-com";
+import Paper from '@mui/material/Paper';
 
 const Quote = () => {
     
@@ -33,38 +34,39 @@ const Quote = () => {
             </section>
             <section className="content-section">
                 <div className="content-section-wraper">
-                    <div className="contact-content-form">
+                    <Paper className="contact-content-form">
                         <h2>{strings.pages.quote.pageTitle}</h2>
                         <div className="contact-form-wraper">
                                 <form onSubmit={sendEmail} className="contact-form">
-                                    <p>
-                                        <span className="form-name">
-                                            <input placeholder={strings.pages.contact.form.name} name="name" required />
-                                        </span>
-                                        <br/>
-                                        <span className="form-email">
-                                            <input placeholder={strings.pages.contact.form.email} name="email" required />
-                                        </span>
-                                        <br/>
-                                        <span className="form-phone">
-                                            <input placeholder={strings.pages.contact.form.phone} name="phone" required />
-                                        </span>
-                                        <br/>
-                                        <span className="form-address">
-                                            <input placeholder={strings.pages.contact.form.address} name="address" required />
-                                        </span>
-                                        <br/>
-                                        <span className="form-description">
-                                            <textarea placeholder={strings.pages.contact.form.description} name="description" aria-required="true" cols="40" rows="10">
-                                            </textarea>
-                                        </span>
-                                        <br/>
-                                        <input type="submit" className="submit-button" value={strings.pages.contact.form.submit}>
-                                        </input>
-                                    </p>
+                                <p>
+                                    <span className="form-name">
+                                        <input placeholder={strings.pages.contact.form.name} name="name" required />
+                                    </span>
+                                    <br/>
+                                    <span className="form-email">
+                                        <input placeholder={strings.pages.contact.form.email} name="email" required />
+                                    </span>
+                                    <br/>
+                                    <span className="form-phone">
+                                        <input placeholder={strings.pages.contact.form.phone} name="phone" required />
+                                    </span>
+                                    <br/>
+                                    <span className="form-address">
+                                        <input placeholder={strings.pages.contact.form.address} name="address" required />
+                                    </span>
+                                    <br/>
+                                    <span className="form-description">
+                                        <textarea placeholder={strings.pages.contact.form.description} name="description" aria-required="true" cols="40" rows="10">
+                                        </textarea>
+                                    </span>
+                                    <br/>
+                                    <input type="submit" className="submit-button" value={strings.pages.contact.form.submit}>
+                                    </input>
+                                </p>
+
                                 </form>
                         </div>
-                    </div>
+                    </Paper>
                 </div>
             </section>
         </main>

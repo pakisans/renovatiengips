@@ -1,4 +1,6 @@
 #home{
+    h2{font-family: 'Krona One', sans-serif};
+    h1{font-family: 'Krona One', sans-serif};
     width: 100%;
 
     .home-tabs {
@@ -10,7 +12,7 @@
     .header-image{
         display: flex;
         width: 100%;
-        background-image: url("../../images/image.jpeg");
+        background-image: url("../../images/home-slide-4.jpg");
         height: 800px;
         background-repeat: no-repeat;
         background-size: 100% 100%;
@@ -24,13 +26,15 @@
         .header-titles{
             padding: 100px 0px 0px 100px;
             h1{
-                font-size: 3vw;
+                font-size: 25px;
                 padding-left: 30px;
+                text-shadow: 2px 2px #424242;
             }
             h2{
-                font-size: 1.5vw;
+                font-size: 15px;
                 padding-top: 10px;
                 padding-left: 60px;
+                text-shadow: 2px 2px #424242;
             }
 
             .button{
@@ -147,18 +151,26 @@
 
 }
 @keyframes slider {
-    0%{
-      background-image: url("../../images/14.jpg");
+    50%{
+        background-image: url("../../images/14.jpg");
         background-size: 100% 100%;
-    }
-
-    40%{
-        background-image: url("../../images/image2.jpeg");
-        background-size: 100% 100%;
+        transform: translateX(0%)
     }
 
     60%{
-        background-image: url("../../images/image4.jpeg");
+        background-image: url("../../images/8.jpg");
         background-size: 100% 100%;
+        transform: translateX(0%)
+    }
+
+    80%{
+        background-image: url("../../images/62.jpg");
+        background-size: 100% 100%;
+        transform: translateX(0%)
+    }
+    100%{
+        background-image: url("../../images/7.jpg");
+        background-size: 100% 100%;
+        transform: translateX(0%)
     }
 }

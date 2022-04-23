@@ -28,6 +28,7 @@
                     color: #fff;
                     font-size: 60px;
                     font-weight: 700;
+                    text-shadow: 2px 2px #424242;
                 }
             }
         }
@@ -62,201 +63,163 @@
             padding-right: 15px;
             max-width: 1300px;
 
-            .contact-info-cards{
-                padding: 50px 40px 0;
-                justify-content: flex-start;
-                flex-direction: row;
-                display: flex;
-                margin-bottom: 0;
+            
 
-                .info-card-details{
-                    width: calc(50% - 20px);
-                    margin: 10px;
-                    padding: 30px;
-                    border-radius: 20px;
-                    background: #fff;
-                    display: flex;
-                    flex-direction: column;
+            .paper-content {
 
-                    .info-card-content{
-                        flex: 1;
-                        margin-bottom: 50px;
-                        display: block;
 
-                    }
-                    .btn-grey{
-                        background: #f5f5f5;
-                        color: #222;
-                        border-radius: 5px;
-                        padding: 10px 20px;
-                        width: fit-content;
-                        display: block;
-                        font-size: 16px;
-                        font-weight: 500;
-                        transition: all .2s ease;
-                        cursor: pointer;
-                    }
+                .MuiPaper-root {
+                    border-radius: 20px !important;
                 }
-                .info-card-cta{
-                    background: red;
-                    width: calc(50% - 10px);
-                    margin: 10px;
-                    padding: 30px;
-                    border-radius: 20px;
-                    display: flex;
+
+                .contact-content-form{
+                    padding: 60px 100px 60px 100px !important;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
                     flex-direction: column;
+                    display: flex;
     
-                    .info-card-content{
-                        flex: 1;
-                        margin-bottom: 50px;
-                        h3{
-                            display: block;
-                            margin-top: 0;
-                            color: #fff;
-                            font-size: 24px;
-                            margin-block-start: 1em;
-                            margin-block-end: 1em;
-                            margin-inline-start: 0px;
-                            margin-inline-end: 0px;
-                            font-weight: bold;
-                        }
-    
-                        .info-card-content2{
-                            p{
-                                margin: 0;
-                                color: #fff;
-                            }
-                        }
+                    h2{
+                        font-size: 40px;
+                        margin-top: 0;
+                        clear: both;
+                        font-family: 'Concert One', cursive !important;
+                        text-align: center;
                         
                     }
-                    .btn-grey{
-                        background: #f5f5f5;
-                        color: #222;
-                        border-radius: 5px;
-                        padding: 10px 20px;
-                        width: fit-content;
-                        display: block;
-                        font-size: 16px;
-                        font-weight: 500;
-                        transition: all .2s ease;
-                        cursor: pointer;
+    
+                    .contact-form-wraper{
+                        .contact-form{
+                            padding-top: 30px;
+                            p{
+                                display: block;
+                                margin-block-start: 1em;
+                                margin-block-end: 1em;
+                                margin-inline-start: 0px;
+                                margin-inline-end: 0px;
+                                span{
+                                    display: block;
+                                    width: 100%;
+                                    input{
+                                        border-radius: 15px;
+                                        width: 100%;
+                                        color: #000;
+                                        border: 0;
+                                        background: #f5f5f5;
+                                        line-height: 1.5;
+                                        cursor: text;
+                                        font-size: 20px;
+                                        padding-left: 15px;
+                                    }
+
+                                    textarea {
+                                        resize: none;
+                                        overflow:hidden;
+                                        padding-left: 15px;
+                                        border-radius: 15px;
+                                      }
+                                }
+                                
+    
+                                .submit-button{
+                                    background: red;
+                                    color: #fff;
+                                    border-radius: 5px;
+                                    padding: 10px 20px;
+                                    width: fit-content;
+                                    display: block;
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    transition: all .2s ease;
+                                    border: 0;
+                                    font-size: 20px;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+                .contact-info-cards{
+                    justify-content: space-between;
+                    flex-direction: row;
+                    display: flex;
+                    margin-bottom: 0;
+    
+                    .info-card-details{
+                        width: calc(50% - 10px);
+                        padding: 45px;
+                        border-radius: 20px;
+                        background: beige;
+                        display: flex;
+                        flex-direction: column;
+    
+                        .info-card-content{
+                            text-align: center;
+                            align-items: center;
+                            p {
+                                .mail-to {
+                                    text-decoration: none;
+                                    color: red;
+                                }
+                            }
+                        }
+                        .btn-grey{
+                            background: #f5f5f5;
+                            color: #222;
+                            border-radius: 5px;
+                            padding: 10px 20px;
+                            width: fit-content;
+                            display: block;
+                            font-size: 16px;
+                            font-weight: 500;
+                            transition: all .2s ease;
+                            cursor: pointer;
+                        }
+                    }
+                    .info-card-cta{
+                        background: red;
+                        width: calc(50% - 10px);
+                        padding: 30px;
+                        border-radius: 20px;
+                        display: flex;
+                        flex-direction: column;
+        
+                        .info-card-content{
+                            flex: 1;
+                            margin-bottom: 50px;
+                            h3{
+                                display: block;
+                                margin-top: 0;
+                                color: #fff;
+                                font-size: 24px;
+                                font-weight: bold;
+                            }
+        
+                            .info-card-content2{
+                                p{
+                                    margin: 0;
+                                    color: #fff;
+                                }
+                            }
+                            
+                        }
+                        .btn-grey{
+                            background: #f5f5f5;
+                            color: #222;
+                            border-radius: 5px;
+                            padding: 10px 20px;
+                            width: fit-content;
+                            display: block;
+                            font-size: 16px;
+                            font-weight: 500;
+                            transition: all .2s ease;
+                            cursor: pointer;
+                        }
                     }
                 }
             }
             
-            .contact-content-form{
-                padding: 50px 40px;
-                justify-content: flex-start;
-                flex-wrap: wrap;
-                flex-direction: column;
-                display: flex;
-
-                h2{
-                    font-size: 40px;
-                    margin-top: 0;
-                    clear: both;
-                }
-
-                .contact-form-wraper{
-                    display: block;
-                    .contact-form{
-                        display: block;
-                        p{
-                            display: block;
-                            margin-block-start: 1em;
-                            margin-block-end: 1em;
-                            margin-inline-start: 0px;
-                            margin-inline-end: 0px;
-                            .form-name{
-                                display: block;
-                                width: 100%;
-                                input{
-                                    width: 100%;
-                                    color: #797979;
-                                    border: 0;
-                                    border-bottom: 1px solid #c3c3c3;
-                                    background: #f5f5f5;
-                                    line-height: 1.5;
-                                    cursor: text;
-                                    font-size: 20px;
-                                }
-                            }
-                            .form-email{
-                                display: block;
-                                width: 100%;
-                                input{
-                                    width: 100%;
-                                    color: #797979;
-                                    border: 0;
-                                    border-bottom: 1px solid #c3c3c3;
-                                    background: #f5f5f5;
-                                    line-height: 1.5;
-                                    cursor: text;
-                                    font-size: 20px;
-                                }
-                            }
-                            .form-phone{
-                                display: block;
-                                width: 100%;
-                                input{
-                                    width: 100%;
-                                    color: #797979;
-                                    border: 0;
-                                    border-bottom: 1px solid #c3c3c3;
-                                    background: #f5f5f5;
-                                    line-height: 1.5;
-                                    cursor: text;
-                                    font-size: 20px;
-                                }
-                            }
-                            .form-address{
-                                display: block;
-                                width: 100%;
-                                input{
-                                    width: 100%;
-                                    color: #797979;
-                                    border: 0;
-                                    border-bottom: 1px solid #c3c3c3;
-                                    background: #f5f5f5;
-                                    line-height: 1.5;
-                                    cursor: text;
-                                    font-size: 20px;
-                                }
-                            }
-
-                            .form-description{
-                                display: block;
-                                width: 100%;
-
-                                textarea{
-                                    padding: 3px 0 10px;
-                                    width: 100%;
-                                    color: #797979;
-                                    border: 0;
-                                    border-bottom: 1px solid #c3c3c3;
-                                    background: #f5f5f5;
-                                    overflow: auto;
-                                    font-size: 20px;
-                                }
-                            }
-
-                            .submit-button{
-                                background: #fff;
-                                color: #222;
-                                border-radius: 5px;
-                                padding: 10px 20px;
-                                width: fit-content;
-                                display: block;
-                                font-size: 16px;
-                                font-weight: 500;
-                                transition: all .2s ease;
-                                border: 0;
-                                font-size: 20px;
-                            }
-                        }
-                    }
-                }
-            }
+            
         }
     }
 }

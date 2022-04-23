@@ -4,6 +4,7 @@ import styled from "styled-components";
 import strings from "../../localization";
 import './contact.scss'
 import emailjs from "emailjs-com";
+import Paper from '@mui/material/Paper';
 
 const Contact = () => {
 
@@ -12,10 +13,6 @@ const Contact = () => {
 
     const handleNavigate = () => {
         navigate('/quote')
-    }
-
-    const handleContact = () => {
-        navigate2('/contact')
     }
     
     const sendEmail = (e) => {
@@ -46,6 +43,38 @@ const Contact = () => {
             </section>
             <section className="content-section">
                 <div className="content-section-wraper">
+                    <div className="paper-content">
+                        <Paper className="contact-content-form">
+                            <h2>{strings.pages.contact.contactForm}</h2>
+                            <div className="contact-form-wraper">
+                                    <form onSubmit={sendEmail} className="contact-form">
+                                        <p>
+                                            <span className="form-name">
+                                                <input placeholder={strings.pages.contact.form.name} name="name" required />
+                                            </span>
+                                            <br/>
+                                            <span className="form-email">
+                                                <input placeholder={strings.pages.contact.form.email} name="email" required />
+                                            </span>
+                                            <br/>
+                                            <span className="form-phone">
+                                                <input placeholder={strings.pages.contact.form.phone} name="phone" required />
+                                            </span>
+                                            <br/>
+                                            <span className="form-address">
+                                                <input placeholder={strings.pages.contact.form.address} name="address" required />
+                                            </span>
+                                            <br/>
+                                            <span className="form-description">
+                                                <textarea placeholder={strings.pages.contact.form.description} name="description" aria-required="true" cols="40" rows="10">
+                                                </textarea>
+                                            </span>
+                                            <br/>
+                                            <input type="submit" className="submit-button" value={strings.pages.contact.form.submit}>
+                                            </input>
+                                        </p>
+                                    </form>
+                            </div>
                     <div className="contact-info-cards">
                         
                         <div className="info-card-details">
@@ -54,7 +83,7 @@ const Contact = () => {
                                 <p>
                                     <a>{strings.pages.contact.contactCard.phone}</a>
                                     <br/>
-                                    <a href='mailto:gipsplaatrenovatie@gmail.com'>{strings.pages.contact.contactCard.email}</a> 
+                                    <a className="mail-to" href='mailto:gipsplaatrenovatie@gmail.com'>{strings.pages.contact.contactCard.email}</a> 
                                 </p>
 
                                 <p>
@@ -65,14 +94,11 @@ const Contact = () => {
                                     </strong>
                                 </p>
                             </div>
-                            <a onClick={handleContact} className="btn-grey">
-                                {strings.pages.contact.pageTitle}
-                            </a>
                         </div>
                         
                         <div className="info-card-cta">
                             <div className="info-card-content">
-                                <h3>{strings.pages.contact.contactCard.requestQuote}</h3>
+                                <h2>{strings.pages.contact.contactCard.requestQuote}</h2>
                                 <div className="info-card-content2">
                                     <p>{strings.pages.contact.contactCard.quoteDesc}</p>
                                 </div>
@@ -83,37 +109,7 @@ const Contact = () => {
                         </div>
 
                     </div>
-                    <div className="contact-content-form">
-                        <h2>{strings.pages.contact.contactForm}</h2>
-                        <div className="contact-form-wraper">
-                                <form onSubmit={sendEmail} className="contact-form">
-                                    <p>
-                                        <span className="form-name">
-                                            <input placeholder={strings.pages.contact.form.name} name="name" required />
-                                        </span>
-                                        <br/>
-                                        <span className="form-email">
-                                            <input placeholder={strings.pages.contact.form.email} name="email" required />
-                                        </span>
-                                        <br/>
-                                        <span className="form-phone">
-                                            <input placeholder={strings.pages.contact.form.phone} name="phone" required />
-                                        </span>
-                                        <br/>
-                                        <span className="form-address">
-                                            <input placeholder={strings.pages.contact.form.address} name="address" required />
-                                        </span>
-                                        <br/>
-                                        <span className="form-description">
-                                            <textarea placeholder={strings.pages.contact.form.description} name="description" aria-required="true" cols="40" rows="10">
-                                            </textarea>
-                                        </span>
-                                        <br/>
-                                        <input type="submit" className="submit-button" value={strings.pages.contact.form.submit}>
-                                        </input>
-                                    </p>
-                                </form>
-                        </div>
+                        </Paper>
                     </div>
                 </div>
             </section>

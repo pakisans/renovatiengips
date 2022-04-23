@@ -1,71 +1,63 @@
 import { string } from "prop-types";
 import React, { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useLocation } from "react-router-dom";
+import RenderSingleWork from "../../Components/SingleWork/RenderSingleWork";
 import strings from "../../localization";
 import './singleWork.scss'
 
 const SingleWork = () => {
     const location = useLocation();
-    const [pageState, setPageState] = useState();
+    const [pageState, setPageState] = useState(0);
+    const headerTitle = useSelector((state) => state.singleWork.headerTitle);
+    const headerBackground = useSelector((state) => state.singleWork.headerBackground);
 
     useEffect(() => {
-        if(location.state){
-            setPageState(location.state)
-        }
+        setPageState(location.state)
     },[location.state])
 
     const renovation = () => {
-        return <>
-            <section className="header">
-                    <div className="content">
-                        <div className="header-content">
-                            <span className="span-title">
-                                {strings.pages.works.renovation.pageTitle}
+        return <React.Fragment>
+            
+            <section className="content-section">
+                <div className="content-section-wraper">
+                        <h1>{strings.pages.works.renovation.pageTitle2}</h1>
+                        <p>
+                            <span>
+                                {strings.pages.works.renovation.description1}
                             </span>
-                        </div>
-                    </div>
-                    <div className="header-image">
-                        <img className="image" src='/images/renovation.jpeg' />
-                    </div>
-                </section>
-                <section className="content-section">
-                    <div className="content-section-wraper">
-                            <h1>{strings.pages.works.renovation.pageTitle2}</h1>
-                            <p>
-                                <span>
-                                    {strings.pages.works.renovation.description1}
-                                </span>
-                            </p>
-                            <h2>{strings.pages.works.renovation.pageTitle3}</h2>
-                            <p>
-                                <span>
-                                    {strings.pages.works.renovation.description2}
-                                </span>
-                            </p>
-                            <h2>{strings.pages.works.renovation.pageTitle4}</h2>
-                            <p>
-                                <span>
-                                    {strings.pages.works.renovation.description3}
-                                </span>
-                            </p>
-                            <p>
-                                <ul>
-                                    <li>{strings.pages.works.renovation.li1}</li>
-                                    <li>{strings.pages.works.renovation.li2}</li>
-                                    <li>{strings.pages.works.renovation.li3}</li>
-                                    <li>{strings.pages.works.renovation.li4}</li>
-                                </ul>
-                            </p>
-                            <h2>{strings.pages.works.renovation.pageTitle5}</h2>
-                            <p>
-                                <span>
-                                    {strings.pages.works.renovation.description4}
-                                </span>
-                            </p>
+                        </p>
+                        <h2>{strings.pages.works.renovation.pageTitle3}</h2>
+                        <p>
+                            <span>
+                                {strings.pages.works.renovation.description2}
+                            </span>
+                        </p>
+                        <h2>{strings.pages.works.renovation.pageTitle4}</h2>
+                        <p>
+                            <span>
+                                {strings.pages.works.renovation.description3}
+                            </span>
+                        </p>
+                        <p>
+                            <ul>
+                                <li>{strings.pages.works.renovation.li1}</li>
+                                <li>{strings.pages.works.renovation.li2}</li>
+                                <li>{strings.pages.works.renovation.li3}</li>
+                                <li>{strings.pages.works.renovation.li4}</li>
+                            </ul>
+                        </p>
+                        <h2>{strings.pages.works.renovation.pageTitle5}</h2>
+                        <p>
+                            <span>
+                                {strings.pages.works.renovation.description4}
+                            </span>
+                        </p>
 
-                        </div>
-                </section>
-            </>
+                    </div>
+            </section>
+            </React.Fragment>
     }
 
     const plaster = () => {
@@ -79,7 +71,7 @@ const SingleWork = () => {
                         </div>
                     </div>
                     <div className="header-image">
-                        <img className="image" src='/images/plasterWorks.jpeg' />
+                        <img className="image" src='/images/plaster.jpg' />
                     </div>
                 </section>
                 <section className="content-section">
@@ -500,22 +492,60 @@ const SingleWork = () => {
         </>
     }
 
-    return (
-        <main id='main-item'>
-            {pageState === 1 && renovation()}
-            {pageState === 2 && plaster()}
-            {pageState === 3 && customKitchen()}
-            {pageState === 4 && interiorExterior()}
-            {pageState === 5 && modernWalls()}
-            {pageState === 6 && floorLaminate()}
-            {pageState === 7 && painting()}
-            {pageState === 8 && customVeranda()}
-            {pageState === 9 && inovativeAdvices()}
-
-        </main>
-    )
-
-
+    return <React.Fragment>
+        <section className="header">
+                    <div className="content">
+                        <div className="header-content">
+                            <span className="span-title">
+                                {headerTitle}
+                            </span>
+                        </div>
+                    </div>
+                    <div className={'header-image'}>
+                        {/* <img className="image" src='/images/renovation.jpeg' /> */}
+                        <img className="image" src={headerBackground} />
+                    </div>
+        </section>
+        <div className="single-work-content">
+        {
+            pageState === 1 && <RenderSingleWork  images = {[
+                                                { url: "/images/renovation/image1.jpg" },
+                                                { url: "/images/renovation/image2.jpg" },
+                                                { url: "/images/renovation/image3.jpg" },
+                                                { url: "/images/renovation/image4.jpg" },
+                                                { url: "/images/renovation/image5.jpg" },
+                                                { url: "/images/renovation/image6.jpg" },
+                                                { url: "/images/renovation/image7.jpg" },
+                                                { url: "/images/renovation/image8.jpg" },
+                                                { url: "/images/renovation/image9.jpg" },
+                                                { url: "/images/renovation/image10.jpg" },
+                                                { url: "/images/renovation/image11.jpg" },
+                                                { url: "/images/renovation/image12.jpg" },
+                                                { url: "/images/renovation/image13.jpg" },
+                                                ]}
+                                                 headerName={strings.pages.works.renovation.pageTitle}
+                                                 headerBackground={'/images/renovation.jpeg'}
+                                                 pageTitle={strings.pages.works.renovation.pageTitle2}
+                                                 firstDescritpion={strings.pages.works.renovation.description1}
+                                                 pageTitle2={strings.pages.works.renovation.pageTitle3}
+                                                 secondDesc={strings.pages.works.renovation.description2}
+            />
+        }
+        </div>
+    </React.Fragment>
+    // return (
+    //     <main id='main-item'>
+    //         {pageState === 1 && renovation()}
+    //         {pageState === 2 && plaster()}
+    //         {pageState === 4 && customKitchen()}
+    //         {pageState === 5 && interiorExterior()}
+    //         {pageState === 6 && modernWalls()}
+    //         {pageState === 7 && floorLaminate()}
+    //         {pageState === 8 && painting()}
+    //         {pageState === 9 && inovativeAdvices()}
+    //         {pageState === 3 && customVeranda()}
+    //     </main>
+    // )
 }
 
 export default SingleWork;

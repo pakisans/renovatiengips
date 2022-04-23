@@ -13,12 +13,12 @@ let strings = new LocalizedStrings({
             services: {
                 renovation: 'Renovation',
                 plaster: 'Plaster work',
-                customKitchen: 'Cutsom kitchen molds',
+                customKitchen: 'Custom kitchen molds',
                 interiorExterior: 'Interior and exterior decoration',
                 modernWalls: 'Modern drywalls and ceilings',
                 floorLaminate: 'Floor, laminate and carpets',
                 painting: 'Painting work',
-                customVeranda: 'Cutom veranda',
+                customVeranda: 'Custom veranda',
                 inovativeAdvices: 'Inovative advices'
             }
         },
@@ -63,7 +63,7 @@ let strings = new LocalizedStrings({
             contact:{
                 pageTitle: 'Contact',
                 contact: 'Contact',
-                contactForm: 'Contact form',
+                contactForm: 'Send us an email',
 
                 contactCard:{
                     phone: 'Phone: +31638234157',
@@ -89,11 +89,13 @@ let strings = new LocalizedStrings({
                 renovation: {
                     pageTitle: 'Renovation',
                     pageTitle2: 'Renovation by our employees',
-                    pageTitle3: 'Renovate a house',
+                    // pageTitle3: 'Renovate a house',
+                    pageTitle3: 'Why you should use Gypsum boards instead of traditional bricks?',
                     pageTitle4: 'Bathroom remodel by our staff',
                     pageTitle5: 'Renovation costs',
                     description1: `A renovation is planned and you could use some extra hands. Still, you don't want to spend too much money. Do you recognize this? Then choose our professionals. We supply employees for large and small renovations. From dormer windows to conservatories, from extension to bathroom, we are here for all your jobs.`,
-                    description2: `We are the right party for a professional and affordable renovation in and around the house because we use skilled workers. We know how important it is to work with the right people. Our professionals have a lot of experience and get to work very accurately. In addition to carrying out the work, our employees ensure a neat and careful finish.`,
+                    description2: 'Gypsum is a rock over 200 million years old formed by deposition, it is very easy to process and is used in construction for many years. Gypsum is completely harmless to humans, and from the point of view of construction biology, it is a completely flawless product. Gypsum has a pH value of human skin, it is odorless and harmless. In short, gypsum is a material that is adapted to the environment, and from a biological point of view, it is completely harmless. The non-flammability of gypsum boards is also based on the good properties of gypsum cores. Gypsum binds about 22 percent of crystal water, which in the case of 15 mm thick boards is about 3 liters per square meter. In case of fire, this water acts as an extinguishing agent.',
+                    // description2: `We are the right party for a professional and affordable renovation in and around the house because we use skilled workers. We know how important it is to work with the right people. Our professionals have a lot of experience and get to work very accurately. In addition to carrying out the work, our employees ensure a neat and careful finish.`,
                     description3: `A bathroom renovation is a large and often expensive job. Because we work with cheap workers, you can renew your bathroom without spending too much money.`,
                     description4: `In addition to these jobs, there are also other options for renovating the bathroom. You can also create more space by changing furniture or by rearranging the bathroom. This way, the bathroom quickly gets a new and more spacious look. Our Polish employees are happy to think along about this, and we ensure a complete end result. You can expect from our employees that everything is neatly placed, assembled and finished so that you no longer have to worry about it.`,
                     description5: `With our employees you keep the costs for a renovation low. This is because we do not make a profit on building materials and work with hard-working, cheap labour. With our employees, renovation in and around the house becomes budget attractive and relatively easy to realize. Do you have any questions or would you like a no-obligation quote? Please feel free to contact us.`,
@@ -304,7 +306,7 @@ let strings = new LocalizedStrings({
             contact:{
                 pageTitle: 'Contact',
                 contact: 'Contact',
-                contactForm: 'Contact form',
+                contactForm: 'Contac us on email',
 
                 contactCard:{
                     phone: 'Phone: +31638234157',

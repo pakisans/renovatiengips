@@ -1,0 +1,33 @@
+.single-work-main {
+    background-image: url("/images/primary-background.webp");
+    // border: 1px solid black;
+    border-radius: 15px;
+    .single-work-wraper {
+        padding: 40px 20px 40px 20px;
+        text-align: center;
+        .work-title {
+            font-size: 30px;
+        }
+        .description{
+            margin-top: 20px;
+            text-align: start;
+            margin-bottom: 20px;
+        }
+
+        .image-slide-layout{
+
+            margin-top: 20px;
+
+            .text-div {
+                p{
+                    margin-top: 0 !important;
+                }
+            }
+        }
+    }
+}
+
+
+.renovationBackground { 
+    background-image: url('/images/renovation.jpeg');
+}

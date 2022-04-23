@@ -1,12 +1,15 @@
 import React from "react";
 import strings from "../../localization";
 import './about-us.scss';
+import Paper from '@mui/material/Paper';
 
 const References = () => {
     return (
         <main id="about-us">
             <section className="content-section">
                 <div className="content-section-wraper">
+                    <Paper>
+
                     <h1>{strings.pages.aboutUs.pageTitle}</h1>
                     <div className="header-image">
                         <img className="image" src='images/logo.png' />
@@ -22,6 +25,8 @@ const References = () => {
                             {strings.pages.aboutUs.description2}
                         </span>
                     </p>
+                    </Paper>
+
                 </div>
             </section>
         </main>
