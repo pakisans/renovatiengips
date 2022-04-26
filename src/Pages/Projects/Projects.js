@@ -63,7 +63,19 @@ const Projects = () => {
         '/images/interior/image11.webp',
         '/images/interior/image12.jpg',
         '/images/interior/image13.jpg',
-        '/images/interior/image14.jpg',
+        '/images/renovation/image1.jpg',
+        '/images/renovation/image2.jpg',
+        '/images/renovation/image3.jpg',
+        '/images/renovation/image4.jpg',
+        '/images/renovation/image5.jpg',
+        '/images/renovation/image6.jpg',
+        '/images/renovation/image7.jpg',
+        '/images/renovation/image8.jpg',
+        '/images/renovation/image9.jpg',
+        '/images/renovation/image10.jpg',
+        '/images/renovation/image12.jpg',
+        '/images/renovation/image13.jpg',
+        '/images/modern/image17.jpg',
       ];
     const isDesktopOrLaptop = useMediaQuery({ minWidth: 1224 })
     const isBigScreen = useMediaQuery({ minWidth: 1824 })
