@@ -89,6 +89,7 @@ const Navigation2 = () => {
                 <nav className="nav-primary">
                     <div className="menu-container">
                         <ul className="menu-menu">
+                        <Breadcrumbs className="breadcrumbs" separator='|'>
                             <li>
                             <NavLink to="/"><a>{strings.navigation.home}</a></NavLink>
                             </li>
@@ -117,6 +118,7 @@ const Navigation2 = () => {
                             <li>
                             <NavLink to="/contact"><a>{strings.navigation.contact}</a></NavLink>
                             </li>
+                            </Breadcrumbs>
                         </ul>
                        
                     </div>
