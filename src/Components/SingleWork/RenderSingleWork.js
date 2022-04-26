@@ -1,10 +1,21 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import strings from "../../localization";
 import ReactSlider from "../ReactSlider/ReactSlider";
 import { changeHeaderBackground, changeHeaderTitle } from "../Slices/SingleWorkSlice";
 import "./singleWork.scss"
 const RenderSingleWork = (props) => {
     const dispatch = useDispatch();
+    const navigate = useNavigate();
+
+    const requestQuote = () =>{
+        navigate('/quote')
+    }
+
+    const contactUs = () => {
+        navigate('/contact')
+    }
 
     useEffect(() => {
         dispatch(changeHeaderTitle(props.headerName));
@@ -20,9 +31,15 @@ const RenderSingleWork = (props) => {
                 <div className="text-div">
                     <p className="description">{props.secondDesc}</p>
                 </div>
-                <div>
-                    <ReactSlider images={props.images} />
+                <span className="work-title">{props.pageTitle3}</span>
+                <div className="react-slider-div">
+                    <span className="react-slider"><ReactSlider images={props.images} /></span>
                 </div>
+            </div>
+            <div className="single-work-buttons">
+                <a onClick={contactUs} className="button-blue">{strings.pages.home.titles.contactUs}</a>
+            
+                <a onClick={requestQuote} className="button">{strings.pages.home.titles.requestQuote}</a>
             </div>
         </div>
     </div>

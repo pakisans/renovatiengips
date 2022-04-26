@@ -529,6 +529,99 @@ const SingleWork = () => {
                                                  firstDescritpion={strings.pages.works.renovation.description1}
                                                  pageTitle2={strings.pages.works.renovation.pageTitle3}
                                                  secondDesc={strings.pages.works.renovation.description2}
+                                                 pageTitle3={strings.pages.works.renovation.pageTitle4}
+            />
+        }
+        {
+            pageState === 2 && <RenderSingleWork  images = {[
+                                                { url: "/images/plaster/image1.jpg" },
+                                                { url: "/images/plaster/image2.jpg" },
+                                                { url: "/images/plaster/image3.jpg" },
+                                                { url: "/images/plaster/image4.jpg" },
+                                                { url: "/images/plaster/image5.jpg" },
+                                                { url: "/images/plaster/image6.jpg" },
+                                                { url: "/images/plaster/image7.jpg" },
+                                                { url: "/images/plaster/image8.jpg" },
+                                                { url: "/images/plaster/image9.jpg" },
+                                                { url: "/images/plaster/image10.jpg" },
+                                                { url: "/images/plaster/image11.jpg" },
+                                                { url: "/images/plaster/image12.jpg" },
+                                                { url: "/images/plaster/image13.jpg" },
+                                                { url: "/images/plaster/image14.jpg" },
+                                                { url: "/images/plaster/image15.jpg" },
+                                                { url: "/images/plaster/image16.jpg" },
+                                                { url: "/images/plaster/image17.jpg" },
+                                                { url: "/images/plaster/image18.jpg" },
+                                                { url: "/images/plaster/image19.jpg" },
+                                                { url: "/images/plaster/image20.jpg" },
+                                                { url: "/images/plaster/image21.jpg" },
+                                                ]}
+                                                 headerName={strings.pages.works.plaster.pageTitle}
+                                                 headerBackground={'/images/plaster.jpg'}
+                                                 pageTitle={strings.pages.works.plaster.pageTitle2}
+                                                 firstDescritpion={strings.pages.works.plaster.description1}
+                                                 pageTitle2={strings.pages.works.plaster.pageTitle3}
+                                                 secondDesc={strings.pages.works.plaster.description2}
+                                                 pageTitle3={strings.pages.works.plaster.pageTitle4}
+            />
+        }
+        {
+            pageState === 6 && <RenderSingleWork  images = {[
+                                                { url: "/images/modern/image1.jpg" },
+                                                { url: "/images/modern/image2.jpg" },
+                                                { url: "/images/modern/image3.jpg" },
+                                                { url: "/images/modern/image4.jpg" },
+                                                { url: "/images/modern/image5.jpg" },
+                                                { url: "/images/modern/image6.jpg" },
+                                                { url: "/images/modern/image7.jpg" },
+                                                { url: "/images/modern/image8.jpg" },
+                                                { url: "/images/modern/image9.jpg" },
+                                                { url: "/images/modern/image10.jpg" },
+                                                { url: "/images/modern/image11.jpg" },
+                                                { url: "/images/modern/image12.jpg" },
+                                                { url: "/images/modern/image13.jpg" },
+                                                { url: "/images/modern/image14.jpg" },
+                                                { url: "/images/modern/image15.jpg" },
+                                                { url: "/images/modern/image16.jpg" },
+                                                { url: "/images/modern/image17.jpg" },
+                                                { url: "/images/modern/image18.jpg" },
+                                                { url: "/images/modern/image19.jpg" },
+                                                { url: "/images/modern/image20.jpg" },
+                                                { url: "/images/modern/image21.jpg" },
+                                                ]}
+                                                 headerName={strings.pages.works.modernWalls.pageTitle}
+                                                 headerBackground={'/images/dryCeiling.jpeg'}
+                                                 pageTitle={strings.pages.works.modernWalls.pageTitle2}
+                                                 firstDescritpion={strings.pages.works.modernWalls.description1}
+                                                 pageTitle2={strings.pages.works.modernWalls.pageTitle3}
+                                                 secondDesc={strings.pages.works.modernWalls.description2}
+                                                 pageTitle3={strings.pages.works.modernWalls.pageTitle4}
+            />
+        }
+        {
+            pageState === 5 && <RenderSingleWork  images = {[
+                                                { url: "/images/interior/image1.jpg" },
+                                                { url: "/images/interior/image2.jpg" },
+                                                { url: "/images/interior/image3.jpg" },
+                                                { url: "/images/interior/image4.jpg" },
+                                                { url: "/images/interior/image5.jpg" },
+                                                { url: "/images/interior/image6.jpg" },
+                                                { url: "/images/interior/image7.jpg" },
+                                                { url: "/images/interior/image8.jpg" },
+                                                { url: "/images/interior/image9.jpg" },
+                                                { url: "/images/interior/image10.jpg" },
+                                                { url: "/images/interior/image11.webp" },
+                                                { url: "/images/interior/image12.jpg" },
+                                                { url: "/images/interior/image13.jpg" },
+                                                { url: "/images/interior/image14.jpg" },
+                                                ]}
+                                                 headerName={strings.pages.works.interiorExterior.pageTitle}
+                                                 headerBackground={'/images/interiorExterior.jpeg'}
+                                                 pageTitle={strings.pages.works.interiorExterior.pageTitle2}
+                                                 firstDescritpion={strings.pages.works.interiorExterior.description1}
+                                                 pageTitle2={strings.pages.works.interiorExterior.pageTitle3}
+                                                 secondDesc={strings.pages.works.interiorExterior.description2}
+                                                 pageTitle3={strings.pages.works.interiorExterior.pageTitle4}
             />
         }
         </div>

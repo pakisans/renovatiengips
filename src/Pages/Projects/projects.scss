@@ -1,5 +1,5 @@
 .header-projects{
-    height: auto !important;
+    height: 400px !important;
     position: relative;
     align-items: center;
     justify-content: center;
@@ -23,16 +23,34 @@
                 margin-bottom: 0px;
                 color: #fff;
                 font-weight: 700;
+                font-family: 'Montserrat', sans-serif;
             }
+        }
+    }
+
+    .header-image{
+        position: absolute;
+        top: 0;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+
+        .image{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            opacity: .9;
         }
     }
 }
 
 .section-wraper{
-    padding: 50px 15px 100px;
+    padding: 50px 15px 50px 15px;
     margin: 0 auto;
     width: 100%;
     max-width: 1300px;
+    background-image: url("/images/real-backgorund.jpeg");
+    border-radius: 15px;
 
     .imageslide{
         margin-left: 200px;

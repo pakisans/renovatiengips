@@ -32,7 +32,8 @@ let strings = new LocalizedStrings({
                     h3: '✔ Warranty for all our works',
                     h4: '✔ Conceptual solutions for whole construction industry',
                     h5: '✔ Consultation with our experts - architects and workers',
-                    h6: '✔ Lower price and higher quality'
+                    h6: '✔ Lower price and higher quality',
+                    contactUs: 'Contact us'
                 },
                 tabs: {
                     pageTitle: 'Our work process',
@@ -91,7 +92,7 @@ let strings = new LocalizedStrings({
                     pageTitle2: 'Renovation by our employees',
                     // pageTitle3: 'Renovate a house',
                     pageTitle3: 'Why you should use Gypsum boards instead of traditional bricks?',
-                    pageTitle4: 'Bathroom remodel by our staff',
+                    pageTitle4: 'Check our work on images below',
                     pageTitle5: 'Renovation costs',
                     description1: `A renovation is planned and you could use some extra hands. Still, you don't want to spend too much money. Do you recognize this? Then choose our professionals. We supply employees for large and small renovations. From dormer windows to conservatories, from extension to bathroom, we are here for all your jobs.`,
                     description2: 'Gypsum is a rock over 200 million years old formed by deposition, it is very easy to process and is used in construction for many years. Gypsum is completely harmless to humans, and from the point of view of construction biology, it is a completely flawless product. Gypsum has a pH value of human skin, it is odorless and harmless. In short, gypsum is a material that is adapted to the environment, and from a biological point of view, it is completely harmless. The non-flammability of gypsum boards is also based on the good properties of gypsum cores. Gypsum binds about 22 percent of crystal water, which in the case of 15 mm thick boards is about 3 liters per square meter. In case of fire, this water acts as an extinguishing agent.',
@@ -332,7 +333,7 @@ let strings = new LocalizedStrings({
                 renovation: {
                     pageTitle: 'Renovation',
                     pageTitle2: 'Renovation by our employees',
-                    pageTitle3: 'Renovate a house',
+                    pageTitle3: 'Check our work on images below',
                     pageTitle4: 'Bathroom remodel by our staff',
                     pageTitle5: 'Renovation costs',
                     description1: `A renovation is planned and you could use some extra hands. Still, you don't want to spend too much money. Do you recognize this? Then choose our professionals. We supply employees for large and small renovations. From dormer windows to conservatories, from extension to bathroom, we are here for all your jobs.`,

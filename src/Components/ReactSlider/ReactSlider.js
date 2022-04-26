@@ -11,10 +11,9 @@ const ReactSlider = (props) => {
 
     return <React.Fragment>
         {
-                isDesktopOrLaptop && <div style={{marginLeft:'200px'}}>
-                    <SimpleImageSlider
-                        width={896}
-                        height={504}
+                isDesktopOrLaptop && <SimpleImageSlider
+                        width={1260}
+                        height={704}
                         images={images}
                         showBullets={true}
                         showNavs={true}
@@ -22,7 +21,6 @@ const ReactSlider = (props) => {
                         autoPlay={true}
                         autoPlayDelay={true}
                     />
-                </div>
             }
             {
                 isTabletOrMobile && <div style={{marginLeft:'0px'}}>

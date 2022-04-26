@@ -69,6 +69,22 @@ const Navigation2 = () => {
                         <Avatar className="avatar-image" sx={{ width: 40, height: 40, backgroundColor:'#d5dee6' }} src='images/telephone.svg' />
                         <label>+31638234157</label>
                     </Breadcrumbs>
+                    <Breadcrumbs className="breadcrumbs">
+                    <span className="icons">
+                            <img onClick={languageNl}
+                                className="iconFr"
+                                alt="Netherlands"
+                                src="http://purecatamphetamine.github.io/country-flag-icons/3x2/NL.svg"/>
+                            <img onClick={languageFr}
+                                className="iconFr"
+                                alt="France"
+                                src="http://purecatamphetamine.github.io/country-flag-icons/3x2/FR.svg"/>
+                            <img onClick={languageEn}
+                                className="iconFr"
+                                alt="English"
+                                src="http://purecatamphetamine.github.io/country-flag-icons/3x2/GB.svg"/>
+                        </span>
+                    </Breadcrumbs>
                 </Stack>
                 <nav className="nav-primary">
                     <div className="menu-container">
@@ -102,21 +118,9 @@ const Navigation2 = () => {
                             <NavLink to="/contact"><a>{strings.navigation.contact}</a></NavLink>
                             </li>
                         </ul>
+                       
                     </div>
-                    <span className="icons">
-                            <img onClick={languageNl}
-                                className="iconFr"
-                                alt="Netherlands"
-                                src="http://purecatamphetamine.github.io/country-flag-icons/3x2/NL.svg"/>
-                            <img onClick={languageFr}
-                                className="iconFr"
-                                alt="France"
-                                src="http://purecatamphetamine.github.io/country-flag-icons/3x2/FR.svg"/>
-                            <img onClick={languageEn}
-                                className="iconFr"
-                                alt="English"
-                                src="http://purecatamphetamine.github.io/country-flag-icons/3x2/GB.svg"/>
-                    </span>
+                    
                     <div className="menu-button">
                         <FaBars size={20} className="bars" />
                     </div>
