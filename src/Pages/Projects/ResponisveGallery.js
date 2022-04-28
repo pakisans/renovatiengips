@@ -82,8 +82,8 @@ const ResponsiveGallerys = (props) => {
           width="300"
           height="300"
           key={ index }
-          style={{ margin: '8px' }}
-          alt=""
+          style={{ margin: '8px', borderRadius: '15px' }}
+          alt="newImage"
         />
       ))}
 

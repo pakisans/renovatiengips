@@ -10,7 +10,7 @@ const ReactSlider = (props) => {
     const isTabletOrMobile = useMediaQuery({ maxWidth: 1224 })
 
     return <React.Fragment>
-        {
+            {
                 isDesktopOrLaptop && <SimpleImageSlider
                         width={1260}
                         height={704}
