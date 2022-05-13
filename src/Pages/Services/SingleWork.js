@@ -624,6 +624,73 @@ const SingleWork = () => {
                                                  pageTitle3={strings.pages.works.interiorExterior.pageTitle4}
             />
         }
+        {
+            pageState === 4 && <RenderSingleWork  images = {[
+                                                { url: "/images/interior/image1.jpg" },
+                                                
+                                                ]}
+                                                 headerName={strings.pages.works.customKitchen.pageTitle}
+                                                 headerBackground={'/images/customKitchen.jpeg'}
+                                                 pageTitle={strings.pages.works.interiorExterior.pageTitle2}
+                                                 firstDescritpion={strings.pages.works.interiorExterior.description1}
+                                                 pageTitle2={strings.pages.works.interiorExterior.pageTitle3}
+                                                 secondDesc={strings.pages.works.interiorExterior.description2}
+                                                 pageTitle3={strings.pages.works.interiorExterior.pageTitle4}
+            />
+        }
+        {
+            pageState === 7 && <RenderSingleWork  images = {[
+                                                { url: "/images/interior/image1.jpg" },
+                                                
+                                                ]}
+                                                 headerName={strings.pages.works.floorLaminate.pageTitle}
+                                                 headerBackground={'/images/floorLaminate.jpeg'}
+                                                 pageTitle={strings.pages.works.interiorExterior.pageTitle2}
+                                                 firstDescritpion={strings.pages.works.interiorExterior.description1}
+                                                 pageTitle2={strings.pages.works.interiorExterior.pageTitle3}
+                                                 secondDesc={strings.pages.works.interiorExterior.description2}
+                                                 pageTitle3={strings.pages.works.interiorExterior.pageTitle4}
+            />
+        }
+        {
+            pageState === 8 && <RenderSingleWork  images = {[
+                                                { url: "/images/interior/paiting.jpeg" },
+                                                
+                                                ]}
+                                                 headerName={strings.pages.works.painting.pageTitle}
+                                                 headerBackground={'/images/paiting.jpeg'}
+                                                 pageTitle={strings.pages.works.interiorExterior.pageTitle2}
+                                                 firstDescritpion={strings.pages.works.interiorExterior.description1}
+                                                 pageTitle2={strings.pages.works.interiorExterior.pageTitle3}
+                                                 secondDesc={strings.pages.works.interiorExterior.description2}
+                                                 pageTitle3={strings.pages.works.interiorExterior.pageTitle4}
+            />
+        }
+        {
+            pageState === 3 && <RenderSingleWork  images = {[
+                                                { url: "/images/interior/paiting.jpeg" },
+                                                
+                                                ]}
+                                                 headerName={strings.pages.works.customVeranda.pageTitle}
+                                                 headerBackground={'/images/veranda.jpeg'}
+                                                 pageTitle={strings.pages.works.interiorExterior.pageTitle2}
+                                                 firstDescritpion={strings.pages.works.interiorExterior.description1}
+                                                 pageTitle2={strings.pages.works.interiorExterior.pageTitle3}
+                                                 secondDesc={strings.pages.works.interiorExterior.description2}
+                                                 pageTitle3={strings.pages.works.interiorExterior.pageTitle4}
+            />
+        }
+        {
+            pageState === 9 && <RenderSingleWork 
+                                                 headerName={strings.pages.works.advices.pageTitle}
+                                                 headerBackground={'/images/advice.png'}
+                                                 pageTitle={strings.pages.works.interiorExterior.pageTitle2}
+                                                 firstDescritpion={strings.pages.works.interiorExterior.description1}
+                                                 pageTitle2={strings.pages.works.interiorExterior.pageTitle3}
+                                                 secondDesc={strings.pages.works.interiorExterior.description2}
+                                                 pageTitle3={strings.pages.works.interiorExterior.pageTitle4}
+            />
+        }
         </div>
     </React.Fragment>
     // return (

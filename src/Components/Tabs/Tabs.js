@@ -8,11 +8,9 @@ import './tabs.scss'
 
 const TabsControl = () => {
     const [activeTab, setActiveTabs] = useState(0);
-    // <Divider sx={{ borderBottomWidth: 1, background: '#1976d2', borderTopWidth: 1}} variant='fullWidth' />
-
     return <div id='tabs'>
         <div className='tabs-header'><h1>{strings.pages.home.tabs.pageTitle}</h1></div>
-        <Tabs value={activeTab} onChange={(e,tab) => setActiveTabs(tab)}>
+        <Tabs className='vertical-tabs' value={activeTab} onChange={(e,tab) => setActiveTabs(tab)}>
             <Tab label={strings.pages.home.tabs.title1} icon={<Avatar alt="test avatar" src="images/contact.svg" />} />
             <Tab label={strings.pages.home.tabs.title2} icon={<Avatar alt="test avatar" src="images/maintenance2.svg" />} />
             <Tab label={strings.pages.home.tabs.title3} icon={<Avatar alt="test avatar" src="images/process-svgrepo-com.svg" />} />

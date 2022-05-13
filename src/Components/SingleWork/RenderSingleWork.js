@@ -33,7 +33,7 @@ const RenderSingleWork = (props) => {
                 </div>
                 <span className="work-title">{props.pageTitle3}</span>
                 <div className="react-slider-div">
-                    <span className="react-slider"><ReactSlider images={props.images} /></span>
+                    <span className="react-slider">{props.images && <ReactSlider images={props?.images} />}</span>
                 </div>
             </div>
             <div className="single-work-buttons">

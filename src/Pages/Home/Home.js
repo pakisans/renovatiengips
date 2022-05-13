@@ -28,7 +28,7 @@ const Home = () => {
         navigate('/services/works', {state: View.PLASTER})
     }
     const navigateItem3 = () => {
-        navigate('/services/works', {state: View.INTERIOR})
+        navigate('/services/works', {state: View.CUSTOMKITCHEN})
     }
     const navigateItem4 = () => {
         navigate('/services/works', {state: View.MODERN})
@@ -43,7 +43,7 @@ const Home = () => {
         navigate('/services/works', {state: View.CUSTOMVERANDA})
     }
     const navigateItem8 = () => {
-        navigate('/services/works', {state: View.CUSTOMKITCHEN})
+        navigate('/services/works', {state: View.INTERIOR})
     }
     const navigateItem9 = () => {
         navigate('/services/works', {state: View.INOVATIVE})
@@ -95,7 +95,7 @@ const Home = () => {
                         </div>
                         <div className="singlecard">
                             <div className="imageTop">
-                                <img onClick={navigateItem3} className="boxImage" src='images/interiorExterior.jpeg' />
+                                <img onClick={navigateItem4} className="boxImage" src='images/interiorExterior.jpeg' />
                             </div>
                             <div className="itemContent">
                                 <h3>{strings.pages.home.cards.ineteriorExterior}</h3>
@@ -103,7 +103,7 @@ const Home = () => {
                         </div>
                         <div className="singlecard">
                             <div className="imageTop">
-                                <img onClick={navigateItem4} className="boxImage" src='images/dryCeiling.jpeg' />
+                                <img onClick={navigateItem5} className="boxImage" src='images/dryCeiling.jpeg' />
                             </div>
                             <div className="itemContent">
                                 <h3>{strings.pages.home.cards.professionalGips}</h3>
@@ -111,7 +111,7 @@ const Home = () => {
                         </div>
                         <div className="singlecard">
                             <div className="imageTop">
-                                <img onClick={navigateItem5} className="boxImage" src='images/floorLaminate.jpeg' />
+                                <img onClick={navigateItem6} className="boxImage" src='images/floorLaminate.jpeg' />
                             </div>
                             <div className="itemContent">
                                 <h3>{strings.pages.home.cards.floorsLaminateCarpet}</h3>
@@ -119,7 +119,7 @@ const Home = () => {
                         </div>
                         <div className="singlecard">
                             <div className="imageTop">
-                                <img onClick={navigateItem6} className="boxImage" src='images/paiting.jpeg' />
+                                <img onClick={navigateItem7} className="boxImage" src='images/paiting.jpeg' />
                             </div>
                             <div className="itemContent">
                                 <h3>{strings.pages.home.cards.paiting}</h3>
@@ -127,7 +127,7 @@ const Home = () => {
                         </div>
                         <div className="singlecard">
                             <div className="imageTop">
-                                <img onClick={navigateItem7} className="boxImage" src='images/veranda.jpeg' />
+                                <img onClick={navigateItem3} className="boxImage" src='images/veranda.jpeg' />
                             </div>
                             <div className="itemContent">
                                 <h3>{strings.pages.home.cards.customVeranda}</h3>
