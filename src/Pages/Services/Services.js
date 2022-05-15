@@ -15,7 +15,7 @@ const Services = () => {
         navigate('/services/works', {state: View.PLASTER})
     }
     const navigateItem3 = () => {
-        navigate('/services/works', {state: View.INTERIOR})
+        navigate('/services/works', {state: View.CUSTOMKITCHEN})
     }
     const navigateItem4 = () => {
         navigate('/services/works', {state: View.MODERN})
@@ -30,7 +30,7 @@ const Services = () => {
         navigate('/services/works', {state: View.CUSTOMVERANDA})
     }
     const navigateItem8 = () => {
-        navigate('/services/works', {state: View.CUSTOMKITCHEN})
+        navigate('/services/works', {state: View.INTERIOR})
     }
     const navigateItem9 = () => {
         navigate('/services/works', {state: View.INOVATIVE})
@@ -50,91 +50,82 @@ const Services = () => {
                     <img className="image1" src='images/image.jpeg' />
                 </div>
             </section>
-            <div className="cards21">
-                <div className="wraper21">
-                    <div className="singlecard">
-                        <div className="imageTop">
-                            <img onClick={navigateItem1} className="boxImage" src='images/renovation.jpeg' />
+            <div className="cards">
+                    <div className="wraper">
+                        <div className="singlecard">
+                            <div className="imageTop">
+                                <img onClick={navigateItem1} className="boxImage" src='images/renovation.jpeg' />
+                            </div>
+                            <div className="itemContent">
+                                <h3>{strings.pages.home.cards.renovation}</h3>
+                            </div>
                         </div>
-                        <div className="itemContent">
-                            <h3>{strings.pages.home.cards.renovation}</h3>
-                            <p>{strings.pages.home.cards.description.description1}</p>
+                        <div className="singlecard">
+                            <div className="imageTop">
+                                <img onClick={navigateItem2} className="boxImage" src='images/plasterWorks.jpeg' />
+                            </div>
+                            <div className="itemContent">
+                                <h3>{strings.pages.home.cards.plasterWorks}</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div className="singlecard">
-                        <div className="imageTop">
-                            <img onClick={navigateItem2} className="boxImage" src='images/plasterWorks.jpeg' />
+                        <div className="singlecard">
+                            <div className="imageTop">
+                                <img onClick={navigateItem8} className="boxImage" src='images/customKitchen.jpeg' />
+                            </div>
+                            <div className="itemContent">
+                                <h3>{strings.pages.home.cards.customKitchenMolds}</h3>
+                            </div>
                         </div>
-                        <div className="itemContent">
-                            <h3>{strings.pages.home.cards.plasterWorks}</h3>
-                            <p>{strings.pages.home.cards.description.description1}</p>
+                        <div className="singlecard">
+                            <div className="imageTop">
+                                <img onClick={navigateItem4} className="boxImage" src='images/interiorExterior.jpeg' />
+                            </div>
+                            <div className="itemContent">
+                                <h3>{strings.pages.home.cards.ineteriorExterior}</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div className="singlecard">
-                        <div className="imageTop">
-                            <img onClick={navigateItem8} className="boxImage" src='images/customKitchen.jpeg' />
+                        <div className="singlecard">
+                            <div className="imageTop">
+                                <img onClick={navigateItem5} className="boxImage" src='images/dryCeiling.jpeg' />
+                            </div>
+                            <div className="itemContent">
+                                <h3>{strings.pages.home.cards.professionalGips}</h3>
+                            </div>
                         </div>
-                        <div className="itemContent">
-                            <h3>{strings.pages.home.cards.customKitchenMolds}</h3>
-                            <p>{strings.pages.home.cards.description.description1}</p>
+                        <div className="singlecard">
+                            <div className="imageTop">
+                                <img onClick={navigateItem6} className="boxImage" src='images/floorLaminate.jpeg' />
+                            </div>
+                            <div className="itemContent">
+                                <h3>{strings.pages.home.cards.floorsLaminateCarpet}</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div className="singlecard">
-                        <div className="imageTop">
-                            <img onClick={navigateItem3} className="boxImage" src='images/interiorExterior.jpeg' />
+                        <div className="singlecard">
+                            <div className="imageTop">
+                                <img onClick={navigateItem7} className="boxImage" src='images/paiting.jpeg' />
+                            </div>
+                            <div className="itemContent">
+                                <h3>{strings.pages.home.cards.paiting}</h3>
+                            </div>
                         </div>
-                        <div className="itemContent">
-                            <h3>{strings.pages.home.cards.ineteriorExterior}</h3>
-                            <p>{strings.pages.home.cards.description.description1}</p>
+                        <div className="singlecard">
+                            <div className="imageTop">
+                                <img onClick={navigateItem3} className="boxImage" src='images/veranda.jpeg' />
+                            </div>
+                            <div className="itemContent">
+                                <h3>{strings.pages.home.cards.customVeranda}</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div className="singlecard">
-                        <div className="imageTop">
-                            <img onClick={navigateItem4} className="boxImage" src='images/dryCeiling.jpeg' />
-                        </div>
-                        <div className="itemContent">
-                            <h3>{strings.pages.home.cards.professionalGips}</h3>
-                            <p>{strings.pages.home.cards.description.description1}</p>
-                        </div>
-                    </div>
-                    <div className="singlecard">
-                        <div className="imageTop">
-                            <img onClick={navigateItem5} className="boxImage" src='images/floorLaminate.jpeg' />
-                        </div>
-                        <div className="itemContent">
-                            <h3>{strings.pages.home.cards.floorsLaminateCarpet}</h3>
-                            <p>{strings.pages.home.cards.description.description1}</p>
-                        </div>
-                    </div>
-                    <div className="singlecard">
-                        <div className="imageTop">
-                            <img onClick={navigateItem6} className="boxImage" src='images/paiting.jpeg' />
-                        </div>
-                        <div className="itemContent">
-                            <h3>{strings.pages.home.cards.paiting}</h3>
-                            <p>{strings.pages.home.cards.description.description1}</p>
-                        </div>
-                    </div>
-                    <div className="singlecard">
-                        <div className="imageTop">
-                            <img onClick={navigateItem7} className="boxImage" src='images/veranda.jpeg' />
-                        </div>
-                        <div className="itemContent">
-                            <h3>{strings.pages.home.cards.customVeranda}</h3>
-                            <p>{strings.pages.home.cards.description.description1}</p>
-                        </div>
-                    </div>
-                    <div className="singlecard">
-                        <div className="imageTop">
-                            <img onClick={navigateItem9} className="boxImage" src='images/advice.png' />
-                        </div>
-                        <div className="itemContent">
-                            <h3>{strings.pages.home.cards.advicesInnovation}</h3>
-                            <p>{strings.pages.home.cards.description.description1}</p>
+                        <div className="singlecard">
+                            <div className="imageTop">
+                                <img onClick={navigateItem9} className="boxImage" src='images/advice.png' />
+                            </div>
+                            <div className="itemContent">
+                                <h3>{strings.pages.home.cards.advicesInnovation}</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </main>
     )
 }

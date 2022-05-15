@@ -25,7 +25,6 @@
             .MuiPaper-root{
                 background-image: url("../../images/bg2-process.jpg");
                 border-radius: 15px;
-
             }
 
             h1{
@@ -64,8 +63,9 @@
     .content-section-wraper {
         padding: 10px !important;
 
-        .MuiPaper-root{
-            
+        .paper-about-us {
+            background-image: url("../../images/bg2-process.jpg") !important;
+                border-radius: 15px;
         }
 
         h1 {

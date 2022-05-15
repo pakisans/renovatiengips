@@ -8,7 +8,7 @@ const References = () => {
         <main id="about-us">
             <section className="content-section">
                 <div className="content-section-wraper">
-                    <Paper>
+                    <Paper className="paper-about-us">
 
                     <h1>{strings.pages.aboutUs.pageTitle}</h1>
                     <div className="header-image">

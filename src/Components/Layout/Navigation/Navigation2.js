@@ -74,8 +74,8 @@ const Navigation2 = () => {
                     
                 </div>
                 <Stack className="stack-with-crumbs" spacing={0.5} direction='row'>
-                    <a onClick={() => window.location.href = "https://facebook.com"}><Avatar className="image" sx={{ width: 40, height: 40 }} src='images/facebook-logo-2019.svg' /></a>
-                    <a onClick={() => window.location.href = "https://instagram.com"}><Avatar className="image" sx={{ width: 40, height: 40 }} src='images/instagram.svg' /></a>
+                    <a target="_blank" href = "https://facebook.com"><Avatar className="image" sx={{ width: 40, height: 40 }} src='images/facebook-logo-2019.svg' /></a>
+                    <a target="_blank" href = "https://www.instagram.com/drywalls.interior.renovation/?fbclid=IwAR0vO0UAP3YkiTZOhgvOLNhscKLZzlzCrVL8ra4n4fYMztkZ7CjejhkqhIA"><Avatar className="image" sx={{ width: 40, height: 40 }} src='images/instagram.svg' /></a>
                     <Breadcrumbs className="breadcrumbs" separator='|'>
                         <Avatar className="avatar-image" sx={{ width: 40, height: 40, backgroundColor:'#d5dee6'  }} src='images/email.svg' />
                         <a className='mailto' href='mailto:gipsplaatrenovatie@gmail.com'>gipsplaatrenovatie@gmail.com</a>

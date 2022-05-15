@@ -225,22 +225,22 @@
     }
 }
 
-@media screen and (max-width: 420px) {
-    .content {
-        margin-bottom: 0px !important;
+    @media screen and (max-width: 420px) {
+        .content {
+            margin-bottom: 0px !important;
 
-        .header-content{
-            max-width: 0px !important;
-            margin-left: 0px !important;
+            .header-content{
+                max-width: 0px !important;
+                margin-left: 0px !important;
 
-            .span-title{
-                color: #fff;
-                font-size: 60px;
-                font-weight: 700;
-                text-shadow: 2px 2px #424242;
-                font-family: "Concert One", cursive !important;
+                .span-title{
+                    color: #fff;
+                    font-size: 60px;
+                    font-weight: 700;
+                    text-shadow: 2px 2px #424242;
+                    font-family: "Concert One", cursive !important;
+                }
             }
-        }
     }
 
     .content-section{

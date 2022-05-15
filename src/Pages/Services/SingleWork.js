@@ -631,11 +631,11 @@ const SingleWork = () => {
                                                 ]}
                                                  headerName={strings.pages.works.customKitchen.pageTitle}
                                                  headerBackground={'/images/customKitchen.jpeg'}
-                                                 pageTitle={strings.pages.works.interiorExterior.pageTitle2}
-                                                 firstDescritpion={strings.pages.works.interiorExterior.description1}
-                                                 pageTitle2={strings.pages.works.interiorExterior.pageTitle3}
-                                                 secondDesc={strings.pages.works.interiorExterior.description2}
-                                                 pageTitle3={strings.pages.works.interiorExterior.pageTitle4}
+                                                 pageTitle={strings.pages.works.customKitchen.pageTitle2}
+                                                 firstDescritpion={strings.pages.works.customKitchen.description1}
+                                                 pageTitle2={strings.pages.works.customKitchen.pageTitle3}
+                                                 secondDesc={strings.pages.works.customKitchen.description2}
+                                                 pageTitle3={strings.pages.works.customKitchen.pageTitle4}
             />
         }
         {
@@ -645,11 +645,11 @@ const SingleWork = () => {
                                                 ]}
                                                  headerName={strings.pages.works.floorLaminate.pageTitle}
                                                  headerBackground={'/images/floorLaminate.jpeg'}
-                                                 pageTitle={strings.pages.works.interiorExterior.pageTitle2}
-                                                 firstDescritpion={strings.pages.works.interiorExterior.description1}
-                                                 pageTitle2={strings.pages.works.interiorExterior.pageTitle3}
-                                                 secondDesc={strings.pages.works.interiorExterior.description2}
-                                                 pageTitle3={strings.pages.works.interiorExterior.pageTitle4}
+                                                 pageTitle={strings.pages.works.floorLaminate.pageTitle2}
+                                                 firstDescritpion={strings.pages.works.floorLaminate.description1}
+                                                 pageTitle2={strings.pages.works.floorLaminate.pageTitle3}
+                                                 secondDesc={strings.pages.works.floorLaminate.description2}
+                                                 pageTitle3={strings.pages.works.floorLaminate.pageTitle4}
             />
         }
         {
@@ -659,11 +659,11 @@ const SingleWork = () => {
                                                 ]}
                                                  headerName={strings.pages.works.painting.pageTitle}
                                                  headerBackground={'/images/paiting.jpeg'}
-                                                 pageTitle={strings.pages.works.interiorExterior.pageTitle2}
-                                                 firstDescritpion={strings.pages.works.interiorExterior.description1}
-                                                 pageTitle2={strings.pages.works.interiorExterior.pageTitle3}
-                                                 secondDesc={strings.pages.works.interiorExterior.description2}
-                                                 pageTitle3={strings.pages.works.interiorExterior.pageTitle4}
+                                                 pageTitle={strings.pages.works.painting.pageTitle2}
+                                                 firstDescritpion={strings.pages.works.painting.description1}
+                                                 pageTitle2={strings.pages.works.painting.pageTitle3}
+                                                 secondDesc={strings.pages.works.painting.description2}
+                                                 pageTitle3={strings.pages.works.painting.pageTitle4}
             />
         }
         {
@@ -684,11 +684,11 @@ const SingleWork = () => {
             pageState === 9 && <RenderSingleWork 
                                                  headerName={strings.pages.works.advices.pageTitle}
                                                  headerBackground={'/images/advice.png'}
-                                                 pageTitle={strings.pages.works.interiorExterior.pageTitle2}
-                                                 firstDescritpion={strings.pages.works.interiorExterior.description1}
-                                                 pageTitle2={strings.pages.works.interiorExterior.pageTitle3}
-                                                 secondDesc={strings.pages.works.interiorExterior.description2}
-                                                 pageTitle3={strings.pages.works.interiorExterior.pageTitle4}
+                                                 pageTitle={strings.pages.works.advices.pageTitle2}
+                                                 firstDescritpion={strings.pages.works.advices.description1}
+                                                 pageTitle2={strings.pages.works.advices.pageTitle3}
+                                                 secondDesc={strings.pages.works.advices.description2}
+                                                 pageTitle3={strings.pages.works.advices.pageTitle4}
             />
         }
         </div>
